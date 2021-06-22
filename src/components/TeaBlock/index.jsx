@@ -137,7 +137,7 @@ function TeaBlock({ id, name, imageUrl, price, weight, onClickAddTea, addedCount
                 active: activeWeight === index,
                 disabled: !weight.includes(scale),
               })}>
-              {scale} грамм
+              {scale} гр.
             </li>
           ))}
         </ul>
