@@ -13,21 +13,6 @@ const _get = (obj, path) => {
   }, obj[firstKey]);
 };
 
-// const getTotalSum = (obj, paths) => {
-//   return Object.values(obj).reduce(
-//     (acc, obj) => {
-//       for (const path of paths) {
-//         acc[path] += _get(obj, path);
-//       }
-
-//       return sum + value;
-//     },
-//     paths.reduce((acc, path) => {
-//       acc[path] = 0;
-//     }, {}),
-//   );
-// };
-
 const getTotalSum = (obj, path) => {
   return Object.values(obj).reduce((sum, obj) => {
     const value = _get(obj, path);
