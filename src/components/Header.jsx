@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 
 import Button from './Button';
+import LogoTea from './LogoTea';
 
-import logo from '../assets/img/logo.svg';
 import cart from '../assets/img/cart.svg';
 
 const HeaderTea = styled.div`
@@ -16,27 +16,6 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`;
-
-const HeaderLogo = styled.div`
-  display: flex;
-  align-items: center;
-
-  img {
-    /* margin-right: 5px; */
-  }
-
-  h1 {
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-
-  span {
-    color: #50b360;
-  }
 `;
 
 const Menu = styled.div`
@@ -90,14 +69,7 @@ function Header() {
   return (
     <HeaderTea>
       <Container>
-        <a href="http://">
-          <HeaderLogo>
-            <img src={logo} alt="Logo" />
-            <h1>
-              Tea <span>House</span>
-            </h1>
-          </HeaderLogo>
-        </a>
+        <LogoTea />
         <Menu>
           <ul>
             <li>Каталог</li>

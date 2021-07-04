@@ -84,7 +84,11 @@ const SortPopup = React.memo(function SortPopup({ items, activeSortType, onClick
   };
 
   React.useEffect(() => {
-    document.body.addEventListener('click', handleOutsideClick);
+    const handler = document.body.addEventListener('click', handleOutsideClick);
+
+    return () => document.body.removeEventListener('click', handler);
+
+    // document.body.addEventListener('click', handleOutsideClick);
   }, []);
 
   return (

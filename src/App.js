@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import styled from 'styled-components';
-import { Header, Slider } from './components';
+import { Header, Slider, Footer } from './components';
 import { Home } from './pages';
 import './App.scss';
 
@@ -27,6 +27,7 @@ function App() {
       <Content>
         <Route path="/" component={Home} exact />
       </Content>
+      <Footer />
     </Wrapper>
   );
 }
