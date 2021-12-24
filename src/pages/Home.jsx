@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { Categories, SortPopup, TeaBlock, TeaLoadingBlock } from '../components';
+import { Categories, SortPopup, TeaBlock, TeaLoadingBlock, Slider } from '../components';
 
 import { fetchTeas } from '../redux/actions/teas';
 import { setCategory, setSortBy } from '../redux/actions/filters';
@@ -59,6 +59,7 @@ function Home() {
 
   return (
     <Container>
+      <Slider />
       <ContentTop>
         <Categories
           activeCategory={category}

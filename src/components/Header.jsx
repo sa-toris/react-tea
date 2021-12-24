@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 
@@ -34,7 +35,11 @@ const Menu = styled.div`
   }
 `;
 
-const HeaderCart = styled.div``;
+const HeaderCart = styled.div`
+  a {
+    text-decoration: none;
+  }
+`;
 
 const ButtonCart = styled(Button)`
   display: flex;
@@ -80,13 +85,13 @@ function Header() {
           </ul>
         </Menu>
         <HeaderCart>
-          <a href="http://">
+          <Link to="/cart">
             <ButtonCart>
               <span>{totalPrice} ₽</span>
               <img src={cart} alt="Cart" />
               <span>{totalCount}</span>
             </ButtonCart>
-          </a>
+          </Link>
         </HeaderCart>
       </Container>
     </HeaderTea>

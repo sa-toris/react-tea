@@ -2,8 +2,8 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import styled from 'styled-components';
-import { Header, Slider, Footer } from './components';
-import { Home } from './pages';
+import { Header, Footer } from './components';
+import { Home, Cart } from './pages';
 import './App.scss';
 
 const Wrapper = styled.div`
@@ -23,9 +23,9 @@ function App() {
   return (
     <Wrapper>
       <Header />
-      <Slider />
       <Content>
         <Route path="/" component={Home} exact />
+        <Route path="/cart" component={Cart} exact />
       </Content>
       <Footer />
     </Wrapper>

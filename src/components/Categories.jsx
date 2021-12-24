@@ -13,7 +13,6 @@ const Categorie = styled.div`
       font-weight: bold;
       cursor: pointer;
       transition: background-color 0.1s ease-in-out;
-      @include noselect();
 
       &:hover {
         background-color: darken(#f9f9f9, 2%);

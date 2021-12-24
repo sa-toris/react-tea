@@ -12,7 +12,6 @@ const StyledButton = styled.button`
   transition: background-color ${(props) => props.theme.other.duration} ease-in-out,
     border-color ${(props) => props.theme.other.duration} ease-in-out;
   border: 1px solid transparent;
-  @include noselect();
 
   &,
   span {

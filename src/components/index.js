@@ -4,6 +4,7 @@ export { default as Button } from './Button';
 export { default as LogoTea } from './LogoTea';
 export { default as Slider } from './Slider';
 export { default as Categories } from './Categories';
+export { default as CartItem } from './CartItem';
 export { default as SortPopup } from './SortPopup';
 export { default as TeaBlock } from './TeaBlock';
 export { default as TeaLoadingBlock } from './TeaBlock/LoadingBlock';
